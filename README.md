@@ -2,11 +2,13 @@
 
 Tools copied from Boost official release.
 
+bash (for Linux) or git bash (for Windows):
+
 ```bash
-cmake -E tar xJ include.zip
-cmake -E tar xJ libs.zip
-mkdir build && cd build
-cmake .. && make
+make prepare
+cd build
+cmake ..                    # Windows: cmake -G "Visual Studio 14 2015 Win64" ..
+make                        # Windows: open the *.sln file with VS2015
 ```
 
 ## Bcp
